@@ -17,30 +17,33 @@
             text-align: center;
 
         }
+
+body{
+    background-color: azure;
+}
     </style>
-
-
 </head>
 
 <body>
     <main>
-        <header>
-<h1> Portfolio of <br> MD Khan Jahan Ali</h1>
-<em> <strong> <h2>Basic Web Developer</h2> </strong> </em><br>
-<a href="file:///G:/HTML/my-portfolio.html" target="_blank"><img src="./Immage/Jahan.jpg" alt="Jahan Photo" width="150" height=""></a> <br>
-
-<strong> Click To View:</strong>
-<ul>
-    <a href="#MySelf"><li>MY Self</li></a>
-    <li>MY Skill & Expertise</li>
-    <li>MY Project</li>
-    <li>MY Education</li>
-    <li>MY Experience</li>
-    <li>Contact Form</li>
-    <li>Send Message</li>
-    <li>MY Address</li> <hr>
-</ul>
-        </header>
+<nav>
+    <header>
+        <h1> Portfolio of <br> MD Khan Jahan Ali</h1>
+        <em> <strong> <h2>Basic Web Developer</h2> </strong> </em><br>
+        <a href="file:///G:/HTML/my-portfolio.html" target="_blank"><img src="./Immage/Jahan.jpg" alt="Jahan Photo" width="150" height=""></a> <br>
+        
+        <strong> Click To View:</strong>
+        <ul>
+            <a href="#MySelf"><li>MY Self</li></a>
+            <a href="#my-Skill-&-Expertise"><li>My Skill & Expertise</li></a>
+            <a href="#My-project"><li>MY Project</li></a>
+            <a href="#My Education"><li>My Education</li></a>
+            <a href="#Experience"><li>Experiencen</li></a>
+            <a href="#Contact"><li>Contact</li></a>
+            <a href="#address"><li>Address</li></a>
+        </ul>
+                </header>
+</nav>
 
         <!--- Introduction Section-->
 <section id="MySelf"> 
@@ -113,8 +116,8 @@
 <a href="F:\C++"><img src="Immage/C++.png" alt="C++" width="50"></a>
 <a href="F:\Java\BasicJava"><img src="Immage/JAVA.png" alt="JAVA" width="100"></a>
 </section>
-
-<section>
+<!--- My Education-->
+<section id="My Education" >
     <h3>My Education</h3>
     <table>
         <caption>Qualification</caption>
@@ -158,7 +161,7 @@
     </tbody>
     </table>
 </section>
-
+<!--- Experience"-->
 <section id="Experience">  
 <h3>Experience</h3>
 <div>
@@ -174,12 +177,8 @@
     
 </div>
 </section>
-
-<!--COntact Form Section-->
-
-<section>
-
-
+<!--Contact Form Section-->
+<section id="Contact" >
 <form action="/my-portfolio.html" method="post">
     <h3> <legend> Contact Form</legend></h3>
     <fieldset >
@@ -196,27 +195,114 @@
         </div>
         <br>
         <div>
+            <label for="DOB">Date Of Birth:</label>
+            <input type="date" id=" DOB" name="DOB" required>
+        </div>
+        <br>
+        <div>
             <label for="age">Age :</label>
             <input type="email" id=" Email" name="Email" required>
         </div>
-        
-
+        <br>
+        <div>
+            <label for="Phone">Phone :</label>
+            <input type="tel" id=" Phone" name="Phone" required>
+        </div>
     </fieldset>
+    <br>
+    <div>
+        <label for="random">Select a random number 1 to 10</label>
+        <input type="number" min="1" max="10" id="random" name="random">
+    </div>
+    <br>
+    <div>
+        <label for="Immage">Chose your Photo :</label>
+        <input type="image" id="Immage" name="immage"/>
+    </div>
+    <br>
+    <div>
+        <label for="Programming">Your Favourite Programming Language: </label>
+        <input list="language" id="Programming" name="Programming">
+        <datalist id="language">
+            <option>c</option>
+            <option>c++</option>
+            <option>java</option>
+            <option>Python</option>
+        </datalist>
+    </div>
 
+    <br>
+    <div>
+        <input type="radio" id="Religious" name="Religious" required>
+        <label for="Muslim">Muslim</label>
+        <input type="radio" id="Religious" name="Religious">
+        <label for="Religious">Hindu:</label>
+    </div>
+    <br>
+    <div>
+        <input type="radio" id="gender" name="gender">
+        <label for="">Men</label>
+        <input type="radio" id="gender" name="gender">
+        <label for="">Women</label>
+        <input type="radio" id="gender" name="gender">
+        <label for="gender">3rd Gender</label>
+    </div>
 
-
+    <br>
+    <div>
+        <label for="color">Favourite Color :</label>
+        <input type="color" id="color" name="Color" required>
+    </div>
+    <br>
+    <div>
+        <label for="document">Submit your document:</label>
+        <input type="file" id="document" name="document" required>
+    </div>
+    <br>
+    <div>
+        <label for="Project">Submit your Project Link</label>
+        <input type="url" id="Project" name="Project">
+    </div>
+    <br>
+    <div>
+        <label for="Department">Select your Department</label>
+        <select name="Department" id="Department">
+            <option>EEE</option>
+            <option>CSE</option>
+            <option>Foresty</option>
+            <option>CIVIL</option>
+            <option>Macanical</option>
+        </select>
+    </div>
+    <br>
+    <div>
+        <label for="Message">Submit your Message</label>
+        <textarea name="Message" id="Message" name="Message" rows="10" cols="20"> </textarea>
+    </div>
+<div>
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+</div>
 </form>
-
-
-  
-
-
 </section>
 
-        <footer>
+<!--Address-->
+<section id="Address"> 
+    <br>
+    <div>
+        <address id="address">
+            <strong>Md. Khan Jahan Ali</strong><br>
+            <em>Soto Boyra Mosjid Road</em><br>
+            <em>Nurnagra, Khulna</em>
+        </address>
+    </div>
+</section>
+<hr>
 
+        <footer>
+Loved with &hearts; Khan Jahan
+Developed BY &copy; Khan Jahan
         </footer>
     </main>
- 
 </body>
 </html>
