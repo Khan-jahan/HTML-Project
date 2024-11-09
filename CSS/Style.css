@@ -1,38 +1,69 @@
 .root {
     --primary-color:#4caf50;
     --secondary-color:#fff;
-    --background-color:#f5d3f3;
+    --background-color:#635762;
+    --card-background-color:#fff;
+    --card-shadow:rgba(0,0,0,0.2);
 }
 
-a[href]{color:red;}
+a[href]{color:white;
+text-decoration: none;
+font-weight: 500;
+
+}
+
+main{
+    width: 80%;
+    margin: auto;
+    padding: 1.2rem;;
+}
 
 body{
-    background-color:aqua
-    
+    background-color:azure ;
+    font-family:Roboto, sans-serif;
+    margin:0;
+    padding:1rem;
 }
-nav{ background-color:#f5d3f3;
+
+nav{background-color: #4caf50;
     color:black;
-
-}
-
-nav header ul a{
-
-}
-
-nav header ul{
-
-
-}
-input, select, textarea{
-
-
-}
-table, th, td {border: 1px solid;
-    border-collapse: collapse;
-    padding: 3px;
     text-align: center;
-    
-    
+    list-style:none;
+    padding: 0.5rem 0;
+    width: 100%;
+
+}
+
+h3{
+    font-size: 2rem;
+    font-weight:700;
+    font-style: italic;
+    font-family: "Roboto", serif;
+    color:#4caf50;
+    text-transform:capitalize;
+    line-height: normal;
+}
+
+nav, header, ul{
+    margin: 0 0.9;
+    padding: 0.5rem;
+}
+
+    ul{
+        list-style: none;
+    }
+
+
+
+table, th, td {border: 1px solid #ddd;
+    border-collapse: collapse;
+    padding:3px;
+    text-align: center;
+}
+th{background-color: #f5d3f3;}
+
+table{
+    width: 100%;
 }
 
 button{
@@ -43,18 +74,46 @@ button:hover{
     background-color:red;
 }
 
-h1, h2, h3{ color:black;
-}
-
 h1::first-letter{
 
     color:aqua;
 }
 
 footer{ background-color: #4caf50;
-    color:#fff
+    font-weight: 700;
+    color:#fffdfd;
+    text-align: center;
+    width: 100%;
+    padding: 1rem;;
+}
 
+.social-media a{
+    color: var(--secondary-color);
+    font-size: 1rem;
+}
+
+.card{
+    background-color:white;
+    border-radius:1rem;
+    margin: 0.5rem;
+    padding:0.5rem;
+    box-shadow:0 0.2rem 0.4rem;
+}
+
+button{
+    padding: 0.5rem 1rem;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    border-radius: 1rem;
 
 }
 
+input, select, textarea{
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
 
+}
