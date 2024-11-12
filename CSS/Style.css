@@ -6,10 +6,11 @@
     --card-shadow:rgba(0,0,0,0.2);
 }
 
-a[href]{color:white;
-text-decoration: none;
-font-weight: 500;
-
+body{
+    background-color:azure ;
+    font-family:Roboto, sans-serif;
+    margin:0;
+    padding:1rem;
 }
 
 main{
@@ -18,21 +19,50 @@ main{
     padding: 1.2rem;;
 }
 
-body{
-    background-color:azure ;
-    font-family:Roboto, sans-serif;
-    margin:0;
-    padding:1rem;
-}
-
 nav{background-color: #4caf50;
     color:black;
     text-align: center;
     list-style:none;
     padding: 0.5rem 0;
     width: 100%;
+}
+
+#Intro{
+    background-image: url(/Immage/Cover.jpg);
+    margin: auto;
+    padding:0.5rem;
+    text-align:left;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
+}
+
+.intro__title{
+    color: white;
+}
+
+.intro__description{
+    color: white
+}
+
+.card{    
+    background-color:white;
+    border-radius:1rem;
+    margin: 0.5rem;
+    padding:0.5rem;
+    box-shadow:0 0.2rem 0.4rem;
+}
+
+
+a[href]{color:white;
+text-decoration: none;
+font-weight: 500;
 
 }
+
+
 
 h3{
     font-size: 2rem;
@@ -66,10 +96,6 @@ table{
     width: 100%;
 }
 
-button{
-    background-color:#4caf50;
-}
-
 button:hover{
     background-color:red;
 }
@@ -92,20 +118,15 @@ footer{ background-color: #4caf50;
     font-size: 1rem;
 }
 
-.card{
-    background-color:white;
-    border-radius:1rem;
-    margin: 0.5rem;
-    padding:0.5rem;
-    box-shadow:0 0.2rem 0.4rem;
-}
 
 button{
+    background-color:#4caf50;
     padding: 0.5rem 1rem;
     font-weight: 700;
     color: white;
     cursor: pointer;
     border-radius: 1rem;
+    display: block;
 
 }
 
