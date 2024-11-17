@@ -34,18 +34,10 @@ nav{background-color: #4caf50;
     text-align:left;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-
-    
+    background-size:cover;
+    color:#4caf50;
 }
 
-.intro__title{
-    color: white;
-}
-
-.intro__description{
-    color: white
-}
 
 .card{    
     background-color:white;
@@ -68,8 +60,6 @@ h3{
     font-size: 2rem;
     font-weight:700;
     font-style: italic;
-    font-family: "Roboto", serif;
-    color:#4caf50;
     text-transform:capitalize;
     line-height: normal;
 }
