@@ -35,7 +35,7 @@ nav{background-color: #4caf50;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    color:#4caf50;
+    color:#e80f0f;
 
     
 }
@@ -76,6 +76,9 @@ nav, header, ul{
         list-style: none;
     }
 
+    h3{
+        color:#4caf50;
+    }
 
 
 table, th, td {border: 1px solid #ddd;
