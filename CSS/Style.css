@@ -47,8 +47,12 @@ nav{background-color: #4caf50;
 }
 
 
+a[href]{color:blueviolet;
+font-family: Arial, Helvetica, sans-serif;
 a[href]{color:brown;
 text-decoration: none;
+font-weight: 700;
+font-style: italic;
 font-weight:1000;
 font-style: italic;
 font-family: 'Times New Roman', Times, serif;
@@ -61,6 +65,7 @@ h3{
     font-size: 2rem;
     font-weight:700;
     font-style: italic;
+    font-family: "Roboto", serif;
     text-transform:capitalize;
     line-height: normal;
 }
@@ -74,6 +79,9 @@ nav, header, ul{
         list-style: none;
     }
 
+    h3{
+        color:#4caf50;
+    }
 
 
 table, th, td {border: 1px solid #ddd;
