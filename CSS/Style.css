@@ -47,9 +47,8 @@ nav{background-color: #4caf50;
 }
 
 
-a[href]{color:blueviolet;
+a[href]{color:red;
 font-family: Arial, Helvetica, sans-serif;
-a[href]{color:brown;
 text-decoration: none;
 font-weight: 700;
 font-style: italic;
