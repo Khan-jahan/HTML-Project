@@ -34,7 +34,7 @@ nav{background-color: #4caf50;
     background-position: center;
     background-repeat: no-repeat;
     background-size:cover;
-    color:#4caf50;
+    color:antiquewhite;
 }
 
 
@@ -47,7 +47,7 @@ nav{background-color: #4caf50;
 }
 
 
-a[href]{color:black;
+a[href]{color:antiquewhite
 font-family: Arial, Helvetica, sans-serif;
 text-decoration: none;
 font-weight: 700;
