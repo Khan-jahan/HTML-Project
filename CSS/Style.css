@@ -24,6 +24,12 @@ nav{background-color: #4caf50;
     list-style:none;
     padding: 0.5rem 0;
     width: 100%;
+    position:sticky;
+    top:0;
+    /* position: fixed;
+    top:0;
+    left: 0; */
+ 
 }
 
 #Intro{
@@ -46,8 +52,18 @@ nav{background-color: #4caf50;
     box-shadow:0 0.2rem 0.4rem;
 }
 
+nav ul{
+    padding: 0;
+    margin: 0;
+    display:flex;
+    justify-content: center;
+    gap: 5rem;
 
-a[href]{color:antiquewhite
+}
+
+nav ul li a
+{color:#fff;
+    font-size:large;
 font-family: Arial, Helvetica, sans-serif;
 text-decoration: none;
 font-weight: 700;
@@ -55,10 +71,11 @@ font-style: italic;
 font-weight:1000;
 font-style: italic;
 font-family: 'Times New Roman', Times, serif;
+/* border-top: 0.2rem red solid;
+padding-top: 0.5rem;
+display:inline-block; */
 
 }
-
-
 
 h3{
     font-size: 2rem;
@@ -103,19 +120,42 @@ h1::first-letter{
     color:aqua;
 }
 
-footer{ background-color: #4caf50;
+.footer{ background-color:#4caf50;
     font-weight: 700;
-    color:#fffdfd;
-    text-align: center;
-    width: 100%;
-    padding: 1rem;;
+    color:#ffffff;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    gap: 20rem;
+    /* padding: 0.5rem 0;
+    position: fixed;
+    bottom: 0; */
 }
 
-.social-media a{
+.social-media{
     color: var(--secondary-color);
-    font-size: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction:none;
+    justify-content: center;
+    height:5rem;
+    width: 15rem;
+    padding: 0;
+    margin: 0;
 }
 
+.social-media ul{
+    display: flex;
+    flex-direction: none;
+    gap: 1rem;
+    justify-self: center;
+
+}
+.social-media p{
+   text-align: center;
+
+}
 
 button{
     background-color:#4caf50;
@@ -124,7 +164,7 @@ button{
     color: white;
     cursor: pointer;
     border-radius: 1rem;
-    display: block;
+    display:inline;
 
 }
 
@@ -134,5 +174,37 @@ input, select, textarea{
     margin: 0.5rem;
     border-radius: 0.5rem;
     box-sizing: border-box;
-
 }
+
+/* .parent{
+    background-color: red;
+    height: 10rem;
+    position: relative;
+}
+.child{
+    text-align:center;
+    background-color: green;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;;
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+} */
+
+/* .parent{
+    background-color:red;
+    height: 30rem;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+
+/* .child{
+    background-color: green;
+    margin: 1rem;
+    height: 8rem;
+    width: 8rem; 
+} */
