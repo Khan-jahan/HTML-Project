@@ -36,13 +36,38 @@ nav{background-color: #4caf50;
     background-image: url(/Immage/Cover.jpg);
     margin: auto;
     padding:0.5rem;
-    text-align:left;
     background-position: center;
     background-repeat: no-repeat;
     background-size:cover;
-    color:antiquewhite;
 }
 
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+
+.intro_title{
+    font-size: 3rem;
+    color:#fff; 
+}
+.intro_discrip{
+    font-size: 2rem;
+    color:chartreuse;
+}
+
+#MySelf{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    padding: 0.5em;
+}
+
+#Contact h3{
+    text-align: center;
+}
 
 .card{    
     background-color:white;
@@ -57,13 +82,13 @@ nav ul{
     margin: 0;
     display:flex;
     justify-content: center;
-    gap: 5rem;
+    gap: 2rem;
 
 }
 
 nav ul li a
 {color:#fff;
-    font-size:large;
+font-size:large;
 font-family: Arial, Helvetica, sans-serif;
 text-decoration: none;
 font-weight: 700;
@@ -127,6 +152,7 @@ h1::first-letter{
     display: flex;
     justify-content: center;
     gap: 20rem;
+    margin-top: -1rem;
     /* padding: 0.5rem 0;
     position: fixed;
     bottom: 0; */
@@ -175,6 +201,60 @@ input, select, textarea{
     border-radius: 0.5rem;
     box-sizing: border-box;
 }
+
+/* Responsiveness Start here */
+
+@media screen and (max-width:1200px) {
+   
+
+}
+
+@media screen and (max-width:900px) {
+    #Intro{
+        height: 20vh;
+        background-image:none;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    body{
+        background-color:aqua ;
+    }
+    .intro_title{
+        font-size: 3rem;
+        color:black;
+}
+.intro_discrip{
+    font-size: 2rem;
+    color:red;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+}
+nav ul{
+    padding: 0;
+    margin: 0;
+    display:flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+}
+
+}
+
+
+@media screen and (max-width:600px)
+{
+    body{
+        background-color: rgb(57, 54, 54);
+    }
+    
+}
+
+
 
 /* .parent{
     background-color: red;
